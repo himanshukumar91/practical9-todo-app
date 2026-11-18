@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+}
+
+.container {
+    width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ccc;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Filters */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Todo Items */
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.todo-item form {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.todo-item form input {
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.empty {
+    text-align: center;
+    padding: 25px;
+    color: gray;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #555;
+}
+
+.footer button {
+    background: #dc3545;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .todo-item {
+        flex-wrap: wrap;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+
+}
